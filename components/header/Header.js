@@ -33,9 +33,9 @@ export default function Header() {
       const network = await provider.getNetwork();
       console.log(network)
       const chainID = network.chainId;
-      const xdc = "51";
+      const bft = "355113";
 
-      if (chainID.toString() !== xdc) {
+      if (chainID.toString() !== bft) {
         alert("Please switch your MetaMask to icp / bitfinity network");
         return;
       }
